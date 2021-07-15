@@ -1,0 +1,29 @@
+import java.util.*;
+class frame3
+{
+public static void main(String[]args)
+{
+ArrayList<String> b1=new ArrayList<String>();
+b1.add("Red");
+b1.add("Green");
+b1.add("Blue");
+b1.add("Pink");
+System.out.println("list of first array:"+b1);
+ArrayList<String> b2=new ArrayList<String>();
+b2.add("Yellow");
+b2.add("Voilet");
+b2.add("Black");
+b2.add("White");
+System.out.println("list of second array:"+b2);
+ArrayList<String> b=new ArrayList<String>();
+b.addAll(b1);
+b.addAll(b2);
+System.out.println("New array:"+b);
+}
+}
+
+
+OUTPUT:
+list of first array:[Red, Green, Blue, Pink]
+list of second array:[Yellow, Voilet, Black, White]
+New array:[Red, Green, Blue, Pink, Yellow, Voilet, Black, White]
